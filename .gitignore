@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment
+env/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
