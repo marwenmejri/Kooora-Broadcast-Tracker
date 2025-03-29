@@ -9,6 +9,7 @@
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Scheduling](#Ssheduling)
 - [Outputs](#outputs)
 - [Results](#results)
 
@@ -35,6 +36,7 @@ The Kooora Broadcast Tracker automates the process of scraping live football mat
   - `undetected-chromedriver`
   - `selenium`
   - `pandas`
+  - `Scheduler`
 
 ## Installation
 
@@ -69,6 +71,40 @@ The Kooora Broadcast Tracker automates the process of scraping live football mat
    - **CSV Files**: Saved in the `output/` directory.
    - **Screenshots**: Saved in the `Screenshots/` directory.
    - **Logs**: Saved in the `logs/` directory.
+
+## Scheduling
+To run the scraper automatically every hour, we use the included scheduler script (scheduler.py) along with a .bat file.
+
+### Scheduler Setup
+1. **Scheduler Script**:
+
+   ```bash
+   VENV_PYTHON = r"D:\KoooraBroadcastTracker\env\Scripts\python.exe"
+   SCRIPT_PATH = r"D:\KoooraBroadcastTracker\main.py"
+   ```
+
+2. **Run the Scheduler**:
+   ```bash
+      python scheduler.py
+   ```
+Start the scheduler manually
+
+3. **Keep the Scheduler Running**:
+
+   ```bash
+      @echo off
+      :: Navigate to the project directory
+      cd D:\KoooraBroadcastTracker
+
+      :: Activate the virtual environment
+      call env\Scripts\activate
+
+      :: Run the scheduler script
+      python scheduler.py
+
+   ```
+To ensure the scheduler runs continuously, create a .bat file to execute it and keep it running in the background.
+Create run_scheduler.bat
 
 ## Outputs
 
@@ -106,6 +142,23 @@ The script captures screenshots of live broadcasts and saves them in the `Screen
 The script uses Selenium with `undetected-chromedriver` to interact with the website. Below is a screenshot of the Chrome browser running during the scraping process:
 
 ![Chrome Driver Running](./Screenshots/chrome_driver_running.png)
+
+
+### Example Scheduler Logs
+```
+2025-03-29 03:12:06,658 [INFO] Scheduler started
+2025-03-29 03:14:00,017 [INFO] Running job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:14:00 GMT)" (scheduled at 2025-03-29 03:14:00+00:00)
+2025-03-29 03:14:00,018 [INFO] Running scraper job...
+2025-03-29 03:14:25,446 [INFO] Script ran successfully.
+2025-03-29 03:14:25,446 [INFO] Job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:16:00 GMT)" executed successfully
+2025-03-29 03:16:00,003 [INFO] Running job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:18:00 GMT)" (scheduled at 2025-03-29 03:16:00+00:00)
+2025-03-29 03:16:00,003 [INFO] Running scraper job...
+2025-03-29 03:16:32,621 [INFO] Script ran successfully.
+2025-03-29 03:16:32,621 [INFO] Job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:18:00 GMT)" executed successfully
+2025-03-29 03:18:00,001 [INFO] Running job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:20:00 GMT)" (scheduled at 2025-03-29 03:18:00+00:00)
+2025-03-29 03:18:00,001 [INFO] Running scraper job...
+2025-03-29 03:18:41,117 [INFO] Script ran successfully.
+```
 
 ## Contact
 

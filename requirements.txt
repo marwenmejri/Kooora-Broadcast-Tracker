@@ -2,3 +2,4 @@ beautifulsoup4==4.12.3
 undetected-chromedriver>=3.5.0
 selenium==4.10.0
 pandas
+APScheduler

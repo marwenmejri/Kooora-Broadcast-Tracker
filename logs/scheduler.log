@@ -1,0 +1,36 @@
+2025-03-29 02:39:31,588 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-29 02:39:31,588 [INFO] Scheduler started. Scraper will run every 5 minutes.
+2025-03-29 02:39:31,589 [INFO] Added job "run_scraper_job" to job store "default"
+2025-03-29 02:39:31,589 [INFO] Scheduler started
+2025-03-29 02:44:31,589 [INFO] Running job "run_scraper_job (trigger: interval[0:05:00], next run at: 2025-03-29 02:44:31 GMT)" (scheduled at 2025-03-29 02:44:31.588821+00:00)
+2025-03-29 02:44:31,589 [INFO] Running scraper job...
+2025-03-29 02:44:57,003 [INFO] Script ran successfully.
+2025-03-29 02:44:57,003 [INFO] Job "run_scraper_job (trigger: interval[0:05:00], next run at: 2025-03-29 02:49:31 GMT)" executed successfully
+2025-03-29 03:12:06,656 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-29 03:12:06,656 [INFO] Scheduler started. Scraper will run every hour, on the hour.
+2025-03-29 03:12:06,658 [INFO] Added job "run_scraper_job" to job store "default"
+2025-03-29 03:12:06,658 [INFO] Scheduler started
+2025-03-29 03:14:00,017 [INFO] Running job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:14:00 GMT)" (scheduled at 2025-03-29 03:14:00+00:00)
+2025-03-29 03:14:00,018 [INFO] Running scraper job...
+2025-03-29 03:14:25,446 [INFO] Script ran successfully.
+2025-03-29 03:14:25,446 [INFO] Job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:16:00 GMT)" executed successfully
+2025-03-29 03:16:00,003 [INFO] Running job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:18:00 GMT)" (scheduled at 2025-03-29 03:16:00+00:00)
+2025-03-29 03:16:00,003 [INFO] Running scraper job...
+2025-03-29 03:16:32,621 [INFO] Script ran successfully.
+2025-03-29 03:16:32,621 [INFO] Job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:18:00 GMT)" executed successfully
+2025-03-29 03:18:00,001 [INFO] Running job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:20:00 GMT)" (scheduled at 2025-03-29 03:18:00+00:00)
+2025-03-29 03:18:00,001 [INFO] Running scraper job...
+2025-03-29 03:18:41,117 [INFO] Script ran successfully.
+2025-03-29 03:18:41,117 [INFO] Job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:20:00 GMT)" executed successfully
+2025-03-29 03:20:00,013 [INFO] Running job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:22:00 GMT)" (scheduled at 2025-03-29 03:20:00+00:00)
+2025-03-29 03:20:00,013 [INFO] Running scraper job...
+2025-03-29 03:20:32,777 [INFO] Script ran successfully.
+2025-03-29 03:20:32,777 [INFO] Job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:22:00 GMT)" executed successfully
+2025-03-29 03:22:00,013 [INFO] Running job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:24:00 GMT)" (scheduled at 2025-03-29 03:22:00+00:00)
+2025-03-29 03:22:00,013 [INFO] Running scraper job...
+2025-03-29 03:22:34,628 [INFO] Script ran successfully.
+2025-03-29 03:22:34,628 [INFO] Job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:24:00 GMT)" executed successfully
+2025-03-29 03:24:00,006 [INFO] Running job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:26:00 GMT)" (scheduled at 2025-03-29 03:24:00+00:00)
+2025-03-29 03:24:00,006 [INFO] Running scraper job...
+2025-03-29 03:24:36,657 [INFO] Script ran successfully.
+2025-03-29 03:24:36,657 [INFO] Job "run_scraper_job (trigger: cron[minute='*/2'], next run at: 2025-03-29 03:26:00 GMT)" executed successfully
